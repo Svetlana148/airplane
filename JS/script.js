@@ -12,19 +12,20 @@ ibg();
 // --------------------------------------
 
 function mouseenterFunc (member) {
-	// member.style.cssText = "background-color: #fff;"
-	member.classList.add("__active");
+	child = member.querySelector('.member__card');
+	child.classList.add("__active");
 	console.log("1  MOUSE    OVER");
 }
 function mouseleaveFunc (member) {
-	member.style.cssText = "";
-	member.classList.remove("__active");
+	child = member.querySelector('.member__card');
+	//child.style.cssText = "";
+	child.classList.remove("__active");
 	console.log("1  MOUSE    OUTTTTTTT");
 }
 
-const memberS = document.querySelectorAll(".member__card");
+const memberS = document.querySelectorAll(".member__item");
 for(i=0; i<memberS.length; i++){
-	const member1 = document.querySelector(`.member__card${i}`);
+	// const member1 = document.querySelector(`.member__card${i}`);
 	memberS[i].addEventListener("mouseenter", (e) => mouseenterFunc(e.target));
 	memberS[i].addEventListener("mouseleave", (e) => mouseleaveFunc(e.target));
 };

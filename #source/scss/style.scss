@@ -156,48 +156,6 @@ margin: 0 0 48px 0;
 
 // ------------------------------
 
-// .business {
-// 	@include flexbox();
-// 	flex-direction: column;
-// 	// height: 523px;
-// 	// width: 100%;
-// 	// justify-content: space-between;
-// 	// align-items: center;
-// }
-
-// .business__content {
-// 	@include flexbox();
-// 	width: 100%;
-// 	height: 100%;
-// }
-// // .business__content__left {
-// // }
-
-// .business__img {
-// 	@include flexbox();
-// 	position: relative;
-// }
-
-// .business__rectangl {
-// 	flex: 0 1 49%;
-// 	position: absolute;
-// 	width: 400px;
-// 	height: 523px;
-// 	top: 0;
-// 	background: #E5F4F6;
-// 	z-index: -1;
-
-// 	&__left{
-// 		left: 0px;
-// 		border-radius: 0px 50px 50px 0px;
-// 	}
-
-// 	&__right{
-// 		right: 0;
-// 		border-radius:  50px  0 0 50px;
-// 	}
-// }
-
 .business {
 	
 	&__content {
@@ -295,15 +253,7 @@ margin: 0 0 48px 0;
 	
 		color: rgba(21, 21, 21, 0.6);
 	}
-	
 }
-
-
-
-
-// .left__img {
-// }
-
 
 //-----------------------main__privat-----------------
 .main__privat {
@@ -453,67 +403,18 @@ margin: 0 0 11px 0;
 .member__item {
 	padding: 0 12px;
 	flex: 0 1 33.3333%;
+	height: 100%;
+	@include flexbox();
+
 }
 
 .member__card {
+
 	height: 572px;
 	background: #F5F5F5;
 	border-radius: 20px;
-
-
-	&__active{
-		width: 384px;
-		background: #656293;
-		
-		// .member__card__title {
-		// 	color: #FFFFFF;	
-		// }
-		// .member__list li {
-		// 	color: #FFFFFF;	
-		// }
-		// .member__card1__text {
-		// 	margin: 0 0 24px 0;
-			
-		// 	font-family: 'Poppins';
-		// 	font-style: normal;
-		// 	font-weight: 700;
-		// 	font-size: 32px;
-		// 	line-height: 40px;
-		
-		// 	color: #161616;
-		
-		// 	span{
-		// 		font-weight: 400;
-		// 		font-size: 18px;
-		// 	}
-		// }
-		
-		// .member__butten {
-		// 	display: block;
-		// 	width: 352px;
-		// 	height: 64px;
-		
-		// 	background: #656293;
-		// 	border-radius: 12px;
-		
-		// 	font-family: 'Poppins';
-		// 	font-style: normal;
-		// 	font-weight: 600;
-		// 	font-size: 22px;
-		// 	line-height: 64px;
-		
-		// 	text-align: center;
-		
-		// 	color: #FFFFFF;
-		// }
-	}
-	}
-	
-
-
-
-
-
+	align-self: flex-end;
+}
 
 
 .member__card__container {
@@ -568,7 +469,7 @@ border: 1px dashed #A9A9AA;
 margin: 2px 0 65px 0;
 }
 
-.member__card1__text {
+.member__card__text {
 	margin: 0 0 24px 0;
 	
 	font-family: 'Poppins';
@@ -603,6 +504,28 @@ margin: 2px 0 65px 0;
 
 	color: #FFFFFF;
 }
+
+
+.__active {
+	// transition: all 1s ease 1s;
+	background-color: #656293;
+	align-self: flex-start;
+	
+	.member__card__title,
+	.member__card__text {
+		color: #FFFFFF;	
+	}
+
+	.member__list li {
+		background: url("../img/main/memberschip_aktiv.svg") left no-repeat;
+		color: #FFFFFF;	
+	}
+
+	.member__butten {
+		background: #FFFFFF;
+		color: #151515;
+		}
+	}
 
 //-----------------------Самолет внизу------------------
 
