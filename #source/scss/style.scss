@@ -8,6 +8,7 @@
 
 
 
+
 body {
 	font-family: "Poppins", "Roboto", sans-serif;
  }
@@ -111,7 +112,7 @@ margin: 0 0 48px 0;
 	
 }
 
-.main__content {
+.main__content { 
 	@include flexbox();
 	flex-direction: column;
 	margin: 258px 0 0 0;
@@ -395,21 +396,27 @@ margin: 0 0 11px 0;
 }
 .member__content__row {
 	height: 100%;
+	overflow: hidden;
+	//margin: 0 -12px;
+	
+}
+
+
+.member__content__row2 {
 	@include flexbox();
-	margin: 0 -12px;
-	align-items: flex-end;
+	margin: 0 12px;
+	// align-items: flex-end;
+	// height: 100%;
 }
 
 .member__item {
 	padding: 0 12px;
-	flex: 0 1 33.3333%;
+	flex: 0 1 33.33333%;
 	height: 100%;
 	@include flexbox();
-
 }
 
 .member__card {
-
 	height: 572px;
 	background: #F5F5F5;
 	border-radius: 20px;
@@ -463,7 +470,7 @@ margin: 0 0 11px 0;
 
 .member__divider {
 
-width: 352px;
+width: 325px;
 height: 0px;
 border: 1px dashed #A9A9AA;
 margin: 2px 0 65px 0;
@@ -488,7 +495,7 @@ margin: 2px 0 65px 0;
 
 .member__butten {
 	display: block;
-	width: 352px;
+	width: 325px;
 	height: 64px;
 
 	background: #656293;

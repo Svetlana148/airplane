@@ -1,0 +1,138 @@
+
+
+// ---------------------------------------------------------
+
+@media (max-width: 767px) {
+	body.lock{
+		overflow: hidden;
+	}
+	// -------------Бургер-меню начало-------------
+	.header__burger {
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 20px;
+		position: relative;
+		// z-index: 3;
+	}
+
+	.header__burger span {
+		position: absolute;
+		background-color: #000;
+		
+		width: 100%;
+		height: 2px;
+		
+		top: 9px;
+		left: 0;
+
+		transition: all 0.3s ease 0s;
+	}
+
+	.header__burger:before, 
+	.header__burger:after {
+		content: "";
+		background-color: #000000;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		left: 0;
+
+		transition: all 0.3s ease 0s;
+	}
+
+	.header__burger:before {
+		content: "";
+		top: 1px;
+	}
+	.header__burger:after {
+		content: "";
+		bottom: 0;
+	}
+	// -------------Бургер-меню active-------------
+
+	.header__burger.active:before{
+		transform: rotate(45deg);
+		top: 9px;
+		
+	};
+	.header__burger.active:after{
+		transform: rotate(-45deg);
+		bottom: 9px;
+	};
+
+	.header__burger.active span{
+		transform: scale(0);
+	};
+// -------------Конец Бургер-меню active-------------
+
+
+	.menu__list {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+
+
+	.header__row {
+		height: 50px;
+		// justify-content: end;
+		// &:nth-child(2) {
+		// 	padding: 0 0 0 150px;
+		//  } 
+	}
+
+	// .menu__logo {
+	// 	flex: 0 0 60px;
+	// }
+
+	// .menu__body { 
+	// 	overflow: auto;
+	// 	position: fixed;
+	// 	width: 100%;
+	// 	height: 100%;
+	// 	top: -100%;
+	// 	left: 0;
+	// 	background-color: #d4b6b6;
+
+	// 	padding: 70px 10px 20px 10px;
+	// }
+
+	.menu__body.active {
+		top: 0;
+	}
+	.menu__list {
+		font-size: 24px;
+	}
+
+	.menu__list li {
+		margin: 0 0 20px 0;
+	}
+
+
+
+	.menu__link {
+		padding: 0;
+	}
+}
+	// -------------Бургер-меню конец-------------
+	// .content{
+	// 	padding: 100px 0 0 0;
+	// }
+	// .content__text {
+	// 	font-size: 16px;
+	// 	line-height: 20px;
+	// }
+
+	// .content__text p{
+	// 	margin: 0 0 20px 0;
+	// }
+
+	@media (max-width: 767px) {
+		.content {
+			padding: 70px 0 0 0;
+		};
+
+	}
+// ---------------------------------------------------------

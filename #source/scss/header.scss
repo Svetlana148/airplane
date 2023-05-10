@@ -1,4 +1,7 @@
-@import "mixins.scss";
+@import "mixins.css";
+@import "media.css";
+
+@include flexbox();
 
 .header {
 

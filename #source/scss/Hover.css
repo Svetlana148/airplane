@@ -1,1 +1,18 @@
-.member__card :hover{background-color:#656293;border-radius:20px}.member__card :hover .member__card__title{color:#fff}.member__card :hover .member__list li{background:url("../img/main/memberschip_aktiv.svg") left no-repeat;color:#fff}.member__card :hover .member__card__text{color:#fff}.member__card :hover .member__butten{background:#fff;color:#151515}
+.member__card :hover {
+  background-color: #656293;
+  border-radius: 20px;
+}
+.member__card :hover .member__card__title {
+  color: #FFFFFF;
+}
+.member__card :hover .member__list li {
+  background: url("../img/main/memberschip_aktiv.svg") left no-repeat;
+  color: #FFFFFF;
+}
+.member__card :hover .member__card__text {
+  color: #FFFFFF;
+}
+.member__card :hover .member__butten {
+  background: #FFFFFF;
+  color: #151515;
+}/*# sourceMappingURL=Hover.css.map */

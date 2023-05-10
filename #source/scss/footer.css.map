@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "footer.scss"
-    ],
-    "names": [],
-    "file": "footer.css"
-}
+{"version":3,"sources":["footer.scss","footer.css","mixins.scss"],"names":[],"mappings":"AAEA;EACA,WAAA;EACA,aAAA;EAEA,mBAAA;ACFA;;ADMA;EEV+F,aAAA;EAAa,YAAA;ADa5G","file":"footer.css"}

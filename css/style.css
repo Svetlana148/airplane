@@ -512,21 +512,22 @@ body {
 
 .member__content__row {
   height: 100%;
+  overflow: hidden;
+}
+
+.member__content__row2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-size: 0;
-  margin: 0 -12px;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  margin: 0 12px;
 }
 
 .member__item {
   padding: 0 12px;
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 33.3333%;
-          flex: 0 1 33.3333%;
+      -ms-flex: 0 1 33.33333%;
+          flex: 0 1 33.33333%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -588,7 +589,7 @@ body {
 }
 
 .member__divider {
-  width: 352px;
+  width: 325px;
   height: 0px;
   border: 1px dashed #A9A9AA;
   margin: 2px 0 65px 0;
@@ -610,7 +611,7 @@ body {
 
 .member__butten {
   display: block;
-  width: 352px;
+  width: 325px;
   height: 64px;
   background: #656293;
   border-radius: 12px;

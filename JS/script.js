@@ -1,3 +1,4 @@
+// -----------For image---------------------------
 function ibg() {
 
 	$.each($('.ibg'), function (index, val) {
@@ -9,7 +10,7 @@ function ibg() {
 
 ibg();
 
-// --------------------------------------
+// ----------------------For Membership cards----------------
 
 function mouseenterFunc (member) {
 	child = member.querySelector('.member__card');
@@ -31,71 +32,12 @@ for(i=0; i<memberS.length; i++){
 };
 
 
+// ----------------For Header media----------------------
 
-
+$(document).ready(function () {
+	$(".header__burger").click(function (event) {
+		$(".header__burger,.header__nav").toggleClass("active");
+		$("body").toggleClass("lock");
+	});
+});
 // --------------------------------------
-
-
-// const member1 = document.querySelector(".member__card1");
-// member1.addEventListener("mouseenter", function (event) {
-// 	console.log("1  MOUSE    OVER");
-// });
-// member1.addEventListener("mouseleave", function (event) {
-// 	console.log("1  MOUSE    OUTTTTTTT");
-// });
-
-
-// const member2 = document.querySelector(".member__card2");
-// member2.addEventListener("mouseenter", function (event) {
-// 	console.log("2  MOUSE    OVER");
-// });
-// member2.addEventListener("mouseleave", function (event) {
-// 	console.log("2  MOUSE    OUTTTTTTT");
-// });
-
-
-
-// const member3 = document.querySelector(".member__card3");
-// member3.addEventListener("mouseenter", function (event) {
-// 	console.log("3  MOUSE    OVER");
-// });
-// member3.addEventListener("mouseleave", function (event) {
-// 	console.log("3  MOUSE    OUTTTTTTT");
-// });
-
-// --------------------------------------
-
-// const member = document.querySelector(".member__content");
-// member.addEventListener("mouseover", function (event) {
-// 	let card = event.target.closest(".member__card");
-// 	if (!card) return;
-// 	// card.classList.toggle("__active");
-// 	card.style.cssText = "background-color: #fff;";
-// 	console.log("__active  3  MOUSE    OVER");
-// });
-
-// member.addEventListener("mouseout", function (event) {
-// 	let card = event.target.closest(".member__card");
-// 	if (!card) return;
-// 	// card.classList.remove("__active");
-// 	card.style.cssText = "";
-// 	console.log("_NO active MOUSE OUT");
-// 	});
-
-// --------------------------------------
-
-
-// const Surch = document.querySelector(".surch");
-// document.addEventListener("click", surch);
-
-
-// function surch(event){
-// 	if (event.target.closest(".surch__icon")){
-// 		Surch.classList.toggle("__active");
-// 	}
-// 	if (!event.target.closest(".surch")){
-// 		Surch.classList.remove("__active");
-// 		txtCounter.innerHTML = 0;
-// 		txtSurch.value = "";
-// 	};
-// }
