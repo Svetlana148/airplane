@@ -75,11 +75,14 @@
 	};
 // -------------Конец Бургер-меню active-------------
 
+
+
+
 .header__row {
 	height: 50px;
 	width: 100%;
 	justify-content: space-between;
-	// align-items: center;
+	align-items: center;
 	// position: relative;
 	z-index: 2;
 }
@@ -90,19 +93,30 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
+	background-color: #e3eef5;
 }
 
-.menu__logo img{
+.menu__logo{
 	height: 30px;
 	width: auto;
-}
-
-
-	.menu__list {
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
+	& img{
+		height: 100%;
+		width: 100%;
 	}
+}
+// .header__nav,
+// .menu__reg,
+// .menu__list {
+// 		flex-direction: column;
+// 		justify-content: center;
+// 		align-items: center;
+// 	}
+
+	// .menu__list {
+	// 	flex-direction: column;
+	// 	justify-content: center;
+	// 	align-items: center;
+	// }
 
 
 

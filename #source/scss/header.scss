@@ -9,7 +9,7 @@
 }
 
 .header__row {
-	width: 1140px;
+	min-width: 1140px;
 	height: 88px;
 	padding: 0 15px;
 	margin: 0 auto;
@@ -19,11 +19,18 @@
 
 }
 
+// .menu__body {
+// 	@include flexbox();
+// 	// justify-content: space-between;
+// 	align-items: center;
+// }
+
 .header__nav {
 	@include flexbox();
 	justify-content: space-between;
-	align-items: center;
+	// align-items: center;
 }
+
 
 .menu__logo {
 	display: block;
@@ -32,6 +39,7 @@
 }
 
 .menu__list {
+	align-self: center;
 	@include flexbox();
 	justify-content: space-between;
 }
