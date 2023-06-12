@@ -105,14 +105,14 @@ body {
 	margin: 0 11px 0 0;
 }
 // ---------------media для first-screen-----------
-@media (max-width 1140px) {
-	.first-screen__text {
-	font-size: 45px;
-	};
-}
+// @media (max-width 1140px) {
+// 	.first-screen__text {
+// 	font-size: 45px;
+// 	};
+// }
 
 
-@media (max-width: 767px) {
+@media (max-width: 1140px) {
 	.first-screen__text {
 	font-size: 45px;
 	};

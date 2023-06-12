@@ -217,7 +217,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 15;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1140px) {
   body.lock {
     overflow: hidden;
   }
@@ -1007,12 +1007,7 @@ body {
   margin: 0 11px 0 0;
 }
 
-@media (max-width 1140px) {
-  .first-screen__text {
-    font-size: 45px;
-  }
-}
-@media (max-width: 767px) {
+@media (max-width: 1140px) {
   .first-screen__text {
     font-size: 45px;
   }
