@@ -2,7 +2,7 @@
 
 .header {
 	//при скроле всегда сверху
-	position: fixed; 
+	position: sticky;
 	width: 100%;
 	top: 0;
 	left: 0;
@@ -22,34 +22,35 @@
 	left: 0;
 	height: 50px;
 	width: 100%;
-	background-color: #a5c8df;
-	// display: none;
+	background-color: #deecf5;
+	display: none;
 	z-index: 2;
 }
 // --------------------------
 
 .header__row {
-	// min-width: 1140px;
+	width: 1140px;
 	height: 88px;
-	// padding: 0 15px;
-	// margin: 0 auto;
+	padding: 0 15px;
+	margin: 0 auto;
 	@include flexbox();
 	justify-content: space-between; 
 	align-items: center;
 
 }
 
-// .menu__body {
-// 	@include flexbox();
-// 	// justify-content: space-between;
-// 	align-items: center;
-// }
+.header__nav {
+	@include flexbox();
+	justify-content: space-between;
+	align-items: center;
+}
 
-// .header__nav {
-// 	@include flexbox();
-// 	justify-content: space-between;
-// 	// align-items: center;
-// }
+.menu__body {
+	@include flexbox();
+	justify-content: space-between;
+	align-items: center;
+}
+
 
 
 .menu__logo {
@@ -94,17 +95,17 @@
 }
 
 
-// .menu__reg {
-// 	width: 241px;
-// 	@include flexbox();
-// 	justify-content: end;
-// 	align-self: center;
-// }
+.menu__reg {
+	width: 241px;
+	@include flexbox();
+	justify-content: end;
+	align-self: center;
+}
 
-// .menu__registr {
-// 	color: #151515;
-// 	margin: 15px;
-// }
+.menu__registr {
+	color: #151515;
+	margin: 15px;
+}
 
 // -------------burger------------------------
 
@@ -114,22 +115,22 @@
 
 // -------------Button------------------------
 
-// .menu__sign-in {
-// 	width: 93px;
-// 	height: 31px;
+.menu__sign-in {
+	width: 93px;
+	height: 31px;
 
-// 	background: #656293;
-// 	border-radius: 5px;
+	background: #656293;
+	border-radius: 5px;
 
-// 	@include flexbox();
-// 	justify-content: center;
-// 	align-items: center;
-// 	align-self: center;
-// }
+	@include flexbox();
+	justify-content: center;
+	align-items: center;
+	align-self: center;
+}
 
-// .button-text {
-// 	color: #FFFFFF;
-// 	z-index: 15;
-// }
+.button-text {
+	color: #FFFFFF;
+	z-index: 15;
+}
 
 @import "media_First-screen.scss";

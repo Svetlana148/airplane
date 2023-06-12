@@ -4,17 +4,11 @@
 		overflow: hidden;
 	}
 
-	// // -------------Header Плашка-------------
-	// 	.header:before {
-	// 	content: "";
-	// 	position: absolute;
-	// 	top: 0;
-	// 	left: 0;
-	// 	height: 50px;
-	// 	width: 100%;
-	// 	background-color: #c6d2da;
-	// 	z-index: 3;
-	// }
+	// -------------Header Плашка-------------
+		.header:before {
+		content: "";
+		display: block;
+	}
 	// -------------Бургер-меню начало-------------
 	.header__burger {
 		display: block;
@@ -79,21 +73,23 @@
 
 .header__row {
 	height: 50px;
-	// width: 100%;
-	// justify-content: space-between;
-	// align-items: center;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
 	// // position: relative;
 	// z-index: 2;
 }
 
-// .header__nav {
-// 	// position: fixed;
-// 	top: 0;
-// 	left: 0;
-// 	width: 100%;
-// 	height: 100%;
-// 	background-color: #e3eef5;
-// }
+.header__nav {
+	// position: fixed;
+	flex-direction: column;
+	justify-content: start;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #e3eef5;
+}
 
 .menu__logo{
 	height: 30px;
@@ -120,12 +116,6 @@
 
 
 
-	
-
-	// .menu__logo {
-	// 	flex: 0 0 60px;
-	// }
-
 .header__nav { 
 	overflow: auto;
 	position: fixed;
@@ -133,7 +123,7 @@
 	height: 100%;
 	top: -100%;
 	left: 0;
-	background-color: #d4b6b6;
+	background-color: #f4fdff;
 
 	padding: 70px 10px 20px 10px;
 }
@@ -173,6 +163,15 @@
 		padding: 0;
 	}
 
+	.menu__reg {
+		margin: 60px;
+		justify-content: center;
+
+		.menu__registr {
+			font-size: 20px;
+		}
+	}
+
 	// -------------конец Бургер-меню -------------
 
 
@@ -195,5 +194,7 @@
 	// 	};
 
 	// }
+
+	
 // ---------------------------------------------------------
 	}
