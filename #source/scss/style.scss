@@ -2,7 +2,9 @@
 @import "mixins.scss";
 
 @import "header.scss";
-@import "main.scss";
+// @import "main.scss";
+@import "main_business.scss";
+
 @import "footer.scss";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;700&display=swap");
 
@@ -54,10 +56,6 @@ body {
 
 
 
-// .first-screen__container {
-// 	height: 100vh;
-// }
-
 .first-screen__content {
 	max-width: 1140px;
 	padding: 0 15px;
@@ -105,15 +103,30 @@ body {
 	margin: 0 11px 0 0;
 }
 // ---------------media для first-screen-----------
-// @media (max-width 1140px) {
-// 	.first-screen__text {
-// 	font-size: 45px;
-// 	};
-// }
-
-
 @media (max-width: 1140px) {
 	.first-screen__text {
 	font-size: 45px;
 	};
 }
+
+//-----------------------Main------------------
+
+.main {
+	width: 100%;
+	flex: 1 0 100%;
+}
+
+.main__content { 
+	@include flexbox();
+	flex-direction: column;
+	margin: 258px 0 0 0;
+}
+
+@media (max-width: 1140px) {
+	.main__content { 
+		margin: 158px 0 0 0;
+	}
+	
+}
+//-----------------------END Main------------------
+
