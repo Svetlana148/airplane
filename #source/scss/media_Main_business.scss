@@ -1,96 +1,69 @@
 @media (max-width: 1180px) {
-	// .business__content {
-	// 	flex-direction: column;
-	// 	}
-	// .business {
-	// 	&__img2 {
-	// 		width: 389px;
-	// 		height: auto;
-			
-	// 	}
+
 	.business {
+		margin: 0 0 50px 0;
 	
 		&__content {
 			flex-direction: column;
 		}
 	
 		&__item {
-			// flex-direction: column;
-			// height: auto; 
 			height: 100%;
 	      display: block;
+				}
+		.business__item__right {
+			justify-content: end;
 		}
-		
-// 		&__img {
-// 			@include flexbox();
-// 			height: 100%;
-// 			// justify-content: space-between;
-// 			align-items: center;
-// 			position: relative;
-// 			display: block;
-// 		}
-		
-		
+
+		&__img {
+			&__right {
+				justify-content:end;
+			}
+			// @include flexbox();
+			// height: 100%;
+			// // justify-content: space-between;
+			// align-items: center;
+			// position: relative;
+			// display: block;
+		}
 	
 		&__img1 {
 			display: none;
-			// width: 100%;
-			// height: 523px;
-			
-			// background: #E5F4F6;
-			// border-radius: 0px 50px 50px 0px;
-			// margin-right: 388px;
-	
-			// &__right {
-			// 	border-radius:  50px 0px 0px 50px;
-			// 	margin: 0 0 0 388px;
-			// }
 		}
 	
-	
 		&__img2 {
-			
 			width: 389px;
 			height: 255px;
 		   position: relative;
 			left: 0;
 	
-			&__right {
-				right: 0;
-				left: unset;
-			}
+			// &__right {
+			// 	left: unset; 
+			// 	right: 0;
+			// }
 		}
-	
-	
-	
 	
 		&__text-item {
-// 			@include flexbox();
-// 			width: 100%;
-// 			height: 100%;
-// 			flex-direction: column;
-// 			justify-content: center;
-// 			align-items: start;
 			padding: 0 15px 0 15px;
-	
-// 			&__left {
-// 				align-items: end;
-// 				padding:  0 38px 0 0;
-// 			}
 		}
 		
-// 		&__title {
-// 			font-family: 'Poppins';
-// 			font-style: normal;
-// 			font-weight: 600;
-// 			font-size: 24px;
-// 			line-height: 36px;
-			
-// 			color: #000000;
-// 			margin: 0 0 14px 0;
-			
-// 		}
-		
+		&__title {
+			margin: 30px 0 14px 0;
+		}
+
+		&__content__right{
+			& .business__item:nth-child(1){
+				order:2;
+			}
+			& .business__item:nth-child(2){
+				order:1;
+			}
+		}
+
+
+
+
+
 // 		&__text {
 // 			max-width: 463px;
 // 			@include flexbox();
@@ -107,11 +80,7 @@
 		
 // 			color: rgba(21, 21, 21, 0.6);
 // 		}
- 	}
  }
+}
 
 
-// @media (max-width: 767px) {
-	
-	
-// }
