@@ -84,3 +84,16 @@
 }
 
 
+@media (max-width: 767px) {
+	.title {
+		@include flexbox();
+		justify-content: center;
+		margin: 0 0 45px 0;
+
+		&__text {
+			
+			font-size: 28px;
+			line-height: 44px;
+		}
+	}
+}

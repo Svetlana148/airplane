@@ -1,0 +1,9 @@
+@media (max-width: 1180px) {
+  .privat__column2 {
+    display: none;
+  }
+  .privat__content {
+    width: 1110px;
+    margin: 0 auto;
+  }
+}
