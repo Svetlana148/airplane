@@ -1,0 +1,40 @@
+//-----------------------main__luxury-----------------
+.main__luxury {
+	margin: 66px 0 66px 0;
+}
+
+.luxury__content {
+	max-width: 1170px;
+	padding: 0 15px;
+	margin: 0 auto;
+
+}
+
+.luxury__content__row {
+	flex-wrap: wrap;
+	@include flexbox();
+	// padding: 0 15px;
+	
+}
+
+.luxury__card {
+	width: 255px;
+	height: 251px;
+	
+	background: #FFFFFF;
+	box-shadow: 0px 30px 84px rgba(19, 10, 46, 0.08), 0px 8px 32px rgba(19, 10, 46, 0.07), 0px 3px 14px rgba(19, 10, 46, 0.03), 0px 1px 3px rgba(19, 10, 46, 0.13);
+	border-radius: 12px;
+	margin: 0 15px 30px 15px;
+}
+
+.luxury__card__img {
+	width: 230.6px;
+	height: 189px;
+	margin: 10px 10px 14px 13px;
+}
+
+// .luxury__card4 {
+// 	margin: 0 0 0 0;
+// }
+
+@import "media_Main_luxury.scss";

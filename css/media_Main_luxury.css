@@ -1,0 +1,10 @@
+@media (max-width: 1140px) {
+  .luxury__content {
+    max-width: 790px;
+    margin: 0 auto;
+  }
+  .luxury__content__row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}

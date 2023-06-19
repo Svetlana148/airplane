@@ -108,6 +108,8 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .header__nav {
@@ -712,6 +714,52 @@ h1, h2, h3, h4, h5, h6 {
   }
   .card1, .card3 {
     margin: 0 0 30px 0;
+  }
+}
+.main__luxury {
+  margin: 66px 0 66px 0;
+}
+
+.luxury__content {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.luxury__content__row {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0;
+}
+
+.luxury__card {
+  width: 255px;
+  height: 251px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 30px 84px rgba(19, 10, 46, 0.08), 0px 8px 32px rgba(19, 10, 46, 0.07), 0px 3px 14px rgba(19, 10, 46, 0.03), 0px 1px 3px rgba(19, 10, 46, 0.13);
+          box-shadow: 0px 30px 84px rgba(19, 10, 46, 0.08), 0px 8px 32px rgba(19, 10, 46, 0.07), 0px 3px 14px rgba(19, 10, 46, 0.03), 0px 1px 3px rgba(19, 10, 46, 0.13);
+  border-radius: 12px;
+  margin: 0 15px 30px 15px;
+}
+
+.luxury__card__img {
+  width: 230.6px;
+  height: 189px;
+  margin: 10px 10px 14px 13px;
+}
+
+@media (max-width: 1170px) {
+  .luxury__content {
+    max-width: 790px;
+    margin: 0 auto;
+  }
+  .luxury__content__row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 .footer {
