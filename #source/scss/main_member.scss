@@ -1,0 +1,153 @@
+//-----------------------main__member-----------------
+
+.main__member {
+	margin: 66px 0 17px 0;
+}
+
+.member__content {
+	width: 1208px;
+	height: 657px; 
+	margin: 0 auto;
+
+}
+.member__content__row {
+	height: 100%;
+	overflow: hidden;
+	//margin: 0 -12px;
+	
+}
+
+
+.member__content__row2 {
+	@include flexbox();
+	margin: 0 12px;
+	align-items: flex-end;
+	height: 100%;
+}
+
+.member__item {
+	padding: 0 12px;
+	flex: 0 1 33.33333%;
+	height: 100%;
+	@include flexbox();
+}
+
+.member__card {
+	height: 572px;
+	background: #F5F5F5;
+	border-radius: 20px;
+	align-self: flex-end;
+}
+
+
+.member__card__container {
+	padding: 24px;
+	margin: 0 auto;
+
+	@include flexbox();
+	
+	flex-direction: column;
+}
+
+.member__card__title {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 40px;
+	margin: 0 0 32px 0;
+
+	color: #151515;
+}
+
+.member__card__subtitle {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 33px;
+	margin: 0 0 24px 0;
+
+	color: #A9A9AA;
+}
+
+.member__list li {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	background: url("../img/main/memberschip.svg") left no-repeat;
+	margin: 0 0 16px 0;
+	padding: 0 0 0 40px;
+
+	color: #151515;
+}
+
+.member__divider {
+
+width: 325px;
+height: 0px;
+border: 1px dashed #A9A9AA;
+margin: 2px 0 65px 0;
+}
+
+.member__card__text {
+	margin: 0 0 24px 0;
+	
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 40px;
+
+	color: #161616;
+
+	span{
+		font-weight: 400;
+		font-size: 18px;
+	}
+}
+
+.member__butten { 
+	display: block;
+	width: 325px;
+	height: 64px;
+
+	background: #656293;
+	border-radius: 12px;
+
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 22px;
+	line-height: 64px;
+
+	text-align: center;
+
+	color: #FFFFFF;
+}
+
+
+.__active {
+	transition: all 0.1s ease 0.1s;
+	background-color: #656293;
+	align-self: flex-start;
+	
+	.member__card__title,
+	.member__card__text {
+		color: #FFFFFF;	
+	}
+
+	.member__list li {
+		background: url("../img/main/memberschip_aktiv.svg") left no-repeat;
+		color: #FFFFFF;	
+	}
+
+	.member__butten {
+		background: #FFFFFF;
+		color: #151515;
+		}
+	}
+
+	@import "media_Main_business.scss";
