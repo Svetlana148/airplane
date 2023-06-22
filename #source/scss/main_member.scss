@@ -85,7 +85,6 @@
 }
 
 .member__divider {
-
 width: 325px;
 height: 0px;
 border: 1px dashed #A9A9AA;
@@ -113,6 +112,7 @@ margin: 2px 0 65px 0;
 	display: block;
 	width: 325px;
 	height: 64px;
+
 
 	background: #656293;
 	border-radius: 12px;
@@ -150,4 +150,4 @@ margin: 2px 0 65px 0;
 		}
 	}
 
-	@import "media_Main_business.scss";
+	@import "media_Main_member.scss";

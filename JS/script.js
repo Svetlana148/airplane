@@ -10,6 +10,18 @@ function ibg() {
 
 ibg();
 
+
+
+
+// ----------------For Header media----------------------
+
+$(document).ready(function () {
+	$(".header__burger").click(function (event) {
+		$(".header__burger,.header__nav").toggleClass("active");
+		$("body").toggleClass("lock");
+	});
+});
+
 // ----------------------For Membership cards----------------
 
 function mouseenterFunc (member) {
@@ -30,14 +42,4 @@ for(i=0; i<memberS.length; i++){
 	memberS[i].addEventListener("mouseenter", (e) => mouseenterFunc(e.target));
 	memberS[i].addEventListener("mouseleave", (e) => mouseleaveFunc(e.target));
 };
-
-
-// ----------------For Header media----------------------
-
-$(document).ready(function () {
-	$(".header__burger").click(function (event) {
-		$(".header__burger,.header__nav").toggleClass("active");
-		$("body").toggleClass("lock");
-	});
-});
 // --------------------------------------

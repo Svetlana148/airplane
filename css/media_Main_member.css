@@ -1,0 +1,13 @@
+@media (max-width: 1210px) {
+  .__active {
+    -webkit-transition: unset;
+    transition: unset;
+    background: #F5F5F5;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .__active .member__card__title,
+.__active .member__card__text {
+    color: #151515;
+  }
+}
