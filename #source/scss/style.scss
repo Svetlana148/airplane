@@ -2,7 +2,7 @@
 @import "mixins.scss";
 
 @import "header.scss";
-// @import "main.scss";
+
 @import "main_business.scss";
 @import "main_privat.scss";
 @import "main_luxury.scss";
@@ -10,9 +10,6 @@
 
 @import "footer.scss";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;700&display=swap");
-
-
-
 
 
 
@@ -115,22 +112,28 @@ body {
 
 //-----------------------Main------------------
 
-.main {
-	width: 100%;
-	flex: 1 0 100%;
+
+
+//-----------------------Самолет внизу------------------
+
+.planelarge {
+	width: 758.64px;
+	height: 200px;
+	margin: 0 auto;
+
+	img {
+		max-width: 100%;
+		}
 }
 
-.main__content { 
-	@include flexbox();
-	flex-direction: column;
-	margin: 258px 0 0 0;
-}
 
-@media (max-width: 1140px) {
-	.main__content { 
-		margin: 158px 0 0 0;
+
+@media (max-width: 760px) {
+	.planelarge {
+		width: 300px;
+		height: auto;
 	}
-	
 }
-//-----------------------END Main------------------
+//-----------------------END Самолет внизу------------------
+
 

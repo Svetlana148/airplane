@@ -1,4 +1,15 @@
 //-----------------------main__member-----------------
+.main {
+	width: 100%;
+	flex: 1 0 100%;
+}
+
+.main__content { 
+	@include flexbox();
+	flex-direction: column;
+	margin: 258px 0 17px 0;
+}
+
 
 .main__member {
 	margin: 66px 0 17px 0;
@@ -149,5 +160,8 @@ margin: 2px 0 65px 0;
 		color: #151515;
 		}
 	}
+
+
+	
 
 	@import "media_Main_member.scss";

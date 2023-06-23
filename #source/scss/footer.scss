@@ -1,20 +1,90 @@
-@import "mixins.scss";
+//-----------------------Footer ------------------
 
 .footer {
-width: 100%;
-height: 170px;
+	width: 100%;
+	min-height: 170px;
+	background: #656293;
+}
 
-background: #656293;
-
+.footer__container {
+	max-width: 1140px;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
 }
 
 .footer__row {
+	// width: 100%;
+	height: 100%;
 	@include flexbox();
+	flex-direction: column;
+	align-items: center;
 	
 }
-// .fotter__container {
-// }
-// .footer__logo {
-// }
+
+.footer__logo {
+	width: 139px;
+	padding: 50px 0 0 0;
+	margin: 0 auto;
+	img {
+		max-width: 100%;
+	}
+}
+
+// .footer__divider {
+// 	width: 1110px;
+// 	height: 2px;
+// 	border: 1px dashed #A9A9AA;
+// 	margin: 30px 0 0 0;
+// 	}
+
+// ----------------------Menu ---------------
+.footer__content {
+	width: 100%;
+	height: 100%;
+	@include flexbox();
+	justify-content: space-between;
+	align-items: center;
+	border-top: 1px dashed rgba(255, 255, 255, 0.2);
+	margin: 30px 0 0 0;
+}
+
 // .footer__menu {
+// 	}
+
+.footer__list {
+	@include flexbox();
+	justify-content: space-between;
+	li {
+		list-style: none;
+		margin: 0 35px 0 0;
+		&:last-child {
+			margin: 0;
+		}
+	}
+}
+	
+
+
+// .footer__link {
 // }
+
+.footer__text {
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+
+text-transform: capitalize;
+
+color: rgba(255, 255, 255, 0.7);
+}
+
+// ----------------------Menu-Бургер---------------
+
+.footer__burger {
+	display: none;
+}
+
+@import "media_footer.scss";
