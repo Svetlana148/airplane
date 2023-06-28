@@ -506,6 +506,13 @@ input {
   color: rgba(21, 21, 21, 0.6);
 }
 
+.box-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  height: 100%;
+}
+
 .box3-text1 {
   font-family: "Poppins";
   font-style: normal;
