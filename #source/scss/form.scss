@@ -135,7 +135,7 @@ input {
 }
 	// -----------------------box3-----------------
 .box-item {
-	flex: 0 1 50%;
+	flex: 0 1 45%;
 	height: 100%;
 }
 
@@ -164,7 +164,20 @@ input {
 	line-height: 21px;
 	color: rgba(21, 21, 21, 0.6);
 	text-decoration-line: underline;
+}
 
+.datepicker {
+	@include flexbox();
+	align-items: center;
+	input {
+		font-size: 20px;
+	}
+	
+
+	img {
+		width: 24px;
+		height: 24px;
+	}
 }
 	// -------------------Button---------------------
 	.form__text {

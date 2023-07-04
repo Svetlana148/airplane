@@ -508,8 +508,8 @@ input {
 
 .box-item {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 50%;
-          flex: 0 1 50%;
+      -ms-flex: 0 1 45%;
+          flex: 0 1 45%;
   height: 100%;
 }
 
@@ -535,6 +535,23 @@ input {
   line-height: 21px;
   color: rgba(21, 21, 21, 0.6);
   text-decoration-line: underline;
+}
+
+.datepicker {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.datepicker input {
+  font-size: 20px;
+}
+.datepicker img {
+  width: 24px;
+  height: 24px;
 }
 
 .form__text {

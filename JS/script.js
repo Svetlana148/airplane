@@ -42,4 +42,25 @@ for(i=0; i<memberS.length; i++){
 	memberS[i].addEventListener("mouseenter", (e) => mouseenterFunc(e.target));
 	memberS[i].addEventListener("mouseleave", (e) => mouseleaveFunc(e.target));
 };
-// --------------------------------------
+// --------------------- datepicker -----------------
+$('[data-toggle="datepicker-from"]').datepicker({
+	autoShow:false,
+	autoHide:false,
+	autoPick:false,
+	inline:false,
+	container:null,
+	trigger:'[data-toggle="calendar-from"]',
+	format:'mm/dd/yyyy'
+});
+
+$('[data-toggle="datepicker-to"]').datepicker({
+	autoShow:false,
+	autoHide:false,
+	autoPick:false,
+	inline:false,
+	container:null,
+	trigger:'[data-toggle="calendar-to"]',
+	format:'mm/dd/yyyy'
+});
+
+
